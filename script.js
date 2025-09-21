@@ -18,7 +18,7 @@ const products = [{
     id: 2,
     name: "HandMade Cute Clips",
     price: 200,
-    image: "image/item2.jpg"
+    image: "image/Item2.jpg"
 }, {
     id: 3,
     name: "Macrame Hand Purse",
