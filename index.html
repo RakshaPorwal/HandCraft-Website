@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandMade HeaVen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="logo" onclick="showPage('home')">Stitch & Bloom</a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('bags')">Our Collection</a></li>
+                <li><a href="#" onclick="showPage('about')">About Us</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact Us</a></li>
+                <li><a href="#" onclick="showPage('feedback')">Feedback</a></li>
+            </ul>
+            <a href="#" class="cart-icon" onclick="showPage('cart')">
+                🛒<span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="content-container">
+        <section id="home" class="page-section active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1>Handcrafted with Heart, Designed for Your Home</h1>
+                    <p>Discover our unique collection of handmade Products.</p>
+                    <a href="#" class="btn" onclick="showPage('bags')">Shop the Collection</a>
+                </div>
+            </div>
+
+            <div class="featured-products-section">
+                <div class="container">
+                    <h2>Our Top Picks</h2>
+                    <div class="product-grid" id="featured-product-list">
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-us-content">
+                <div class="container" style="text-align: center;">
+                    <div class="story-header">
+                        <h1 class="story-title">The Artisan's Promise</h1>
+                        <p class="story-subtitle">Every piece is a commitment to quality, authenticity, and soulful
+                            creation.</p>
+                    </div>
+                    <div class="story-image-container" style="max-width: 800px;">
+                        <img src="https://www.shutterstock.com/image-photo/cropped-shot-women-making-homemade-600nw-1937287609.jpg"
+                            alt="A person working on a craft project" class="story-image">
+                    </div>
+                    <div class="story-details" style="max-width: 800px;">
+                        <div class="story-section">
+                            <p>Our journey began in a small studio, driven by the quiet joy of making things by hand.
+                                We believe a handmade item carries a unique soul—a story you can hold in your hands.</p>
+                        </div>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="#" class="btn" onclick="showPage('about')">Learn Our Story</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-products-section">
+                <div class="container">
+                    <h2>Shop by Category</h2>
+                    <div class="category-grid">
+                        <a href="#" onclick="showPage('bags')" class="category-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8cOZnJwJqv-H101rVD3lXWkPsjrwzUE90nA&s"
+                                alt="Ceramics" class="category-image">
+                            <h3>Ceramics</h3>
+                        </a>
+                        <a href="#" onclick="showPage('bags')" class="category-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0HG96jXpiDLblbk5hsDuD_9m2M3_JdId2EA&s"
+                                alt="Jewelry" class="category-image">
+                            <h3>Jewelry</h3>
+                        </a>
+                        <a href="#" onclick="showPage('bags')" class="category-card">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZvvahv5w25mQt7K_plgvuDmdiPTBP2y30U1nxxJez2DPZHOPmcrw9YKM36H2vmBLkluU&usqp=CAU"
+                                alt="Decor" class="category-image">
+                            <h3>Decor</h3>
+                        </a>
+                        <a href="#" onclick="showPage('bags')" class="category-card">
+                            <img src="https://don16obqbay2c.cloudfront.net/wp-content/uploads/diy-products-1701335147.png"
+                                alt="Bags" class="category-image">
+                            <h3>Bags</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-section">
+                <div class="container">
+                    <h2>What Our Customers Say</h2>
+                    <div class="testimonials-grid">
+                        <div class="feedback-card">
+                            <div class="stars">
+                                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                    class="star">★</span><span class="star">★</span>
+                            </div>
+                            <p>"The ceramic mug I ordered is even more beautiful in person. The craftsmanship is
+                                incredible!"</p>
+                            <p class="customer-name">- Riya S.</p>
+                        </div>
+                        <div class="feedback-card">
+                            <div class="stars">
+                                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                    class="star">★</span><span class="star">★</span>
+                            </div>
+                            <p>"I love my new macrame wall hanging! It adds a cozy, bohemian vibe to my living room."
+                            </p>
+                            <p class="customer-name">- David P.</p>
+                        </div>
+                        <div class="feedback-card">
+                            <div class="stars">
+                                <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                    class="star">★</span><span class="star half">★</span>
+                            </div>
+                            <p>"The quality is excellent, and the packaging was so thoughtful. Perfect gift!"</p>
+                            <p class="customer-name">- Jessica L.</p>
+                        </div>
+                    </div>
+                    <div class="call-to-action">
+                        <a href="#" class="btn" onclick="showPage('feedback')">Give Us Feedback</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bags" class="page-section">
+            <div class="container">
+                <h1>Our HandMade Collection</h1><br>
+                <div class="product-grid" id="product-list">
+                </div>
+            </div>
+        </section>
+
+        <section id="cart" class="page-section">
+            <div class="container">
+                <h1>Your Shopping Cart</h1>
+                <div id="cart-items">
+                </div>
+                <div id="cart-empty-message" style="text-align: center; padding: 2rem; font-style: italic;">Your cart is
+                    empty.</div>
+                <div id="cart-summary" style="display: none;">
+                    <div class="cart-summary">
+                        <h3>Subtotal: <span id="cart-subtotal">₹0</span></h3>
+                    </div>
+                    <div class="cart-actions" style="text-align: right; margin-top: 1rem;">
+                        <a href="#" class="btn" onclick="showPage('checkout')">Proceed to Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="checkout" class="page-section">
+            <div class="checkout-container">
+                <h1>Checkout</h1>
+                <form id="checkoutForm">
+                    <h3>Enter Shipping Info</h3>
+                    <input type="text" id="fullName" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="address" placeholder="Shipping Address" required></textarea>
+
+                    <h3>Select Payment Method</h3>
+                    <select id="paymentMethod" required>
+                        <option value="" disabled selected>Select method</option>
+                        <option value="card">💳 Credit/Debit Card</option>
+                        <option value="upi">📱 UPI</option>
+                        <option value="cod">🚚 Cash on Delivery</option>
+                    </select>
+
+                    <!-- Dynamic Payment Fields -->
+                    <div id="paymentDetails"></div>
+                    <div id="qrContainer" style="display:none; text-align:center; margin-top:1rem;">
+                        <p>📱 Scan this QR to pay via UPI</p>
+                        <img id="upiQR" src="" alt="UPI QR Code" style="width:200px; height:200px;">
+                    </div>
+
+
+                    <div class="cart-summary">
+                        <h3>Your Cart:</h3>
+                        <h3>Total: <span id="checkout-total">₹0</span></h3>
+                    </div>
+                    <button type="submit" class="btn">Place Order</button>
+                </form>
+                <div id="msg"></div>
+            </div>
+        </section>
+
+
+        <section id="about" class="page-section">
+            <div class="container about-us-content">
+                <div class="story-header">
+                    <h1 class="story-title">The Heart Behind the Handcrafts</h1>
+                    <p class="story-subtitle">Our journey began with a simple dream: to bring warmth and artistry to
+                        everyday life.</p>
+                </div>
+
+                <div class="story-image-container">
+                    <img src="https://www.shutterstock.com/image-photo/cropped-shot-women-making-homemade-600nw-1937287609.jpg"
+                        alt="A person working on a craft project" class="story-image">
+                </div>
+
+                <div class="story-details">
+                    <div class="story-section">
+                        <h2>Our Beginning</h2>
+                        <p>In a small studio filled with natural light, our founder began creating simple, beautiful
+                            pieces. Each item was a labor of love, a testament to the quiet joy of making things by
+                            hand. What started as a personal passion soon grew into a mission: to share the beauty of
+                            handcrafted goods with the world.</p>
+                    </div>
+
+                    <div class="story-section">
+                        <h2>The Artisan's Promise</h2>
+                        <p>Every item you find here is a commitment to **quality, sustainability, and authenticity**. We
+                            use ethically sourced materials and time-honored techniques. There are no shortcuts, only a
+                            dedication to the craft. We believe a handmade item carries a unique soul—a story you can
+                            hold in your hands.</p>
+                    </div>
+
+                    <div class="story-section">
+                        <h2>More Than Just a Product</h2>
+                        <p>When you purchase from us, you're not just buying an object; you're supporting a community of
+                            artisans and a tradition of careful, deliberate creation. Thank you for joining us on this
+                            journey. We hope our creations bring a little piece of our heart into your home.</p>
+                    </div>
+                </div>
+
+                <div class="call-to-action">
+                    <a href="#" class="btn" onclick="showPage('bags')">Explore Our Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <div class="form-container">
+                    <p>Have a question? We'd love to hear from you!</p>
+                    <form id="contactform" action="https://formspree.io/f/xrbkngno" method="POST">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" required></textarea>
+                        <button type="submit" class="btn">Send Message</button><br>
+                        <p id="responseMsg"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="feedback" class="page-section">
+            <div class="container">
+                <h1>What Our Customers Are Saying</h1>
+                <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem; font-style: italic;">We believe in
+                    the power of shared experiences. Read what people are saying about their handmade treasures from
+                    Artisan's Nook!</p>
+
+                <div class="feedback-grid">
+                    <div class="feedback-card">
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <h3>Absolutely Stunning!</h3>
+                        <p>"The Woolen KeyChain I ordered is even more beautiful in person. The craftsmanship is
+                            incredible,
+                            and it feels so good to support a small, independent artisan."</p>
+                        <p class="customer-name">- Riya S.</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star">★</span>
+                        </div>
+                        <h3>A Unique Piece for My Collection</h3>
+                        <p>"I love my new macrame Purse! It adds a cozy, bohemian vibe to my living room and I
+                            can tell it was made with great care."</p>
+                        <p class="customer-name">- David P.</p>
+                    </div>
+
+                    <div class="feedback-card">
+                        <div class="stars">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                                class="star">★</span><span class="star half">★</span>
+                        </div>
+                        <h3>Perfect Gift!</h3>
+                        <p>"I bought the wooden coaster set as a gift, and my friend was thrilled. The quality is
+                            excellent, and the packaging was so thoughtful."</p>
+                        <p class="customer-name">- Jessica L.</p>
+                    </div>
+                </div>
+
+                <div class="form-container" style="margin-top: 3rem;">
+                    <h2>Share Your Experience</h2>
+                    <p>We value your feedback and would love to hear about your new handcrafted item!</p>
+                    <form id="FeedbackForm" action="https://formspree.io/f/xrbkngno" method="POST">
+                        <label for="feedback-name">Name</label>
+                        <input type="text" id="feedback-name" name="name" required>
+                        <label for="feedback-email">Email</label>
+                        <input type="email" id="feedback-email" name="email" required>
+                        <label for="feedback-message">Feedback</label>
+                        <textarea id="feedback-message" name="message" required></textarea>
+                        <button type="submit" class="btn">Submit Feedback</button><br>
+                        <p id="responseMsg2"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Stitch & Bloom. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
